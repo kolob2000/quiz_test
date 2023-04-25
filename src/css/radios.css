@@ -1,0 +1,51 @@
+input[type="radio"] {
+    display: none;
+}
+
+.quiz__tabs {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.quiz__item {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.pare > label {
+    width: calc(50% - 4px);
+}
+
+label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 16px;
+    background: #F5F5F5;
+    border-radius: 16px;
+    border: 1px solid transparent;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D8D8D8;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked + label {
+    background: #ffffff;
+    border-color: #383838;
+}
+
+input[type="radio"]:checked + label > .circle {
+    border: 6px solid #383838;
+}
+
+
+
+
+
